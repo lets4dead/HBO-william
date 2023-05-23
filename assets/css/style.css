@@ -11,6 +11,7 @@ body{
 }
 
 .topo-pagina{
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   height: 110px;
@@ -348,6 +349,11 @@ footer p{
 /* ----------------------------------------------------- */
 
 /* se for tela com mouse ira aplicar efeitos nos botoes */
+
+.tv-shows{
+  overflow-x:hidden
+}
+
 @media (pointer:fine){
   .nav-assine:hover{
     color: black;
@@ -380,6 +386,13 @@ footer p{
   animation: gradient-botao 2.2s linear 1;
   animation-fill-mode:forwards;
 } 
+
+.card-1 button:hover, .card-2 button:hover{
+  border: 2px solid #ff00e5;
+  animation: gradient-botao 2.2s linear 1;
+  animation-fill-mode:forwards;
+}
+
 
 @keyframes gradient-botao{
     0% {
@@ -414,10 +427,15 @@ header{
   font-size: 3rem;
 }
   
-/* .card-1:hover ~ .card-2{ 
+/* .card-2:hover ~ .card-1{ 
   transform:  rotateY(-40deg);
   transition: transform 1s ease-in-out;
-} VER DEPOIS*/
+} 
+
+ .card-1:hover ~ .card-2{ 
+  transform:  rotateY(-40deg);
+  transition: transform 1s ease-in-out;
+}   */
 
 .topo-pagina{
   height: 20px;
@@ -557,6 +575,10 @@ footer li{
   flex-direction: row; 
   justify-content: center;
   background-image: url("assets/images/background-movies-series"); 
+}
+
+.card-1 button{
+  bottom: -130px;
 }
 
 }
