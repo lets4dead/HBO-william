@@ -350,11 +350,12 @@ footer p{
 
 /* se for tela com mouse ira aplicar efeitos nos botoes */
 
-.tv-shows{
-  overflow-x:hidden
-}
 
-@media (pointer:fine){
+@media (pointer:fine) and (min-width:481px){
+  .tv-shows{
+    overflow-x:hidden
+  }
+
   .nav-assine:hover{
     color: black;
     transition: 2s;
