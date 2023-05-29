@@ -575,7 +575,6 @@ footer li{
 .main-card{
   flex-direction: row; 
   justify-content: center;
-  background-image: url("assets/images/background-movies-series"); 
 }
 
 .card-1 button{
