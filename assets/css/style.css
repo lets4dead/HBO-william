@@ -8,6 +8,7 @@
 body{
     background-color: var(--primary-color);
     text-align: center;
+    margin: 0;/*tira margen que o browser coloca-*/
 }
 
 .topo-pagina{
@@ -197,6 +198,13 @@ header{
 
 /*-------------- MAIN -----------------------------------------*/
 
+.main-index{
+  background-image: url("/assets/images/background-movies-series.png") ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
 .main-conheca{
   color: white;
   font-family: Raleway;
@@ -204,16 +212,21 @@ header{
   font-weight: 500;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 1152px;
+  margin: auto;
+  padding-bottom: 45px;
+ 
 }
 
 .main-card{
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   display: flex;
   flex-direction: column;
   gap: 70px;
   font-family: raleway;  
-  align-items: center;
+  align-items: center; 
+  padding-bottom: 190px;
 }
 
 .card-1, .card-2{
@@ -287,9 +300,6 @@ header{
 
 /* NOVOS UNIVERSOS */
 
-.descubra{
-  padding-top: 250px;
-}
 
 .descubra h4{
     color: white;
@@ -315,8 +325,13 @@ header{
 
 footer{
   padding-top: 120px;
-
 }
+
+footer ul{
+  padding: 0;
+  list-style-type: none;
+}
+
 
 footer li{
   font-family: raleway;
@@ -326,6 +341,7 @@ footer li{
   font-size: 0.875rem;
   font-weight: bold;
   padding-bottom: 13px;
+ 
 }
 
 footer p{
@@ -335,7 +351,6 @@ footer p{
   padding-left: 15px;
   padding-right: 15px;
   margin-top: -12px;
-  padding-bottom: 70px;
 }
 
 .redes-sociais{
@@ -344,41 +359,168 @@ footer p{
   align-items: center;
   gap: 40px;
   padding-bottom: 20px;
+  padding-top: 70px;
 }
 
-/* ----------------------------------------------------- */
+/* -------------------TELA DE LOGIN--------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------  */
+
+
+.main-tela-login{
+  display: flex;
+  align-items: center;
+  background-image: url("/assets/images/background-movies-series.png") ;
+  background-size: 115%;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+
+.tela-login{
+  background-color: var(--form-bg-color);
+  border-radius: 8px;
+  color: white;
+  font-family: Raleway;
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 84px;
+  height: 512px;
+  padding-left: 50px;
+  padding-right: 40px;
+  width: 80%;
+  max-width: 800px;
+
+}
+
+.tela-login h1{
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+  padding-top: 30px;
+}
+
+.tela-login p{
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.campos{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input{
+  background:var(--form-field-bg-color);
+  border: var(--form-field-border);
+  border-radius: 8px;
+  height: 53px;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding-left: 15px;
+}
+
+.login-botoes{
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-entrar:hover{
+  cursor: pointer;
+  border: 2px solid #ff00e5;
+  animation: gradient-botao 0.5s linear 1;
+  animation-fill-mode:forwards;
+  transform: scale(1.05);
+}
+
+.login-esqueci:hover{
+  cursor: pointer;
+}
+
+.login-entrar{
+  background: var(--btn-bg-color-gradient);
+  transition: background 1s, outline 1s, transform 1s;
+  background-size: 250%;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: white;
+  font-family: Raleway;
+
+  margin-top: 40px;
+  width: 157px;
+  height: 48px;
+}
+
+.login-esqueci{
+  background: none;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  color: var(--link-color);
+  font-size: 1rem;
+
+  width: 160px;
+  height: 48px;
+}
+
+
+
+/* -------------------OUTRAS TELAS--------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------  */
 
 /* se for tela com mouse ira aplicar efeitos nos botoes */
 
 
 @media (pointer:fine) and (min-width:481px){
-  .tv-shows{
-    overflow-x:hidden
-  }
 
-  .nav-assine:hover{
-    color: black;
-    transition: 2s;
-  }
 
-  header{
-    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e); 
-    animation: gradient 10s ease infinite alternate;
-    background-size: 400% 400%;
-    position: relative;
-    top: -80px;
-  }
+
+footer li:hover{
+  cursor: pointer;
+  color: white;
+  transition: 1s;
+}
+
+.nav-entrar:hover{
+    cursor: pointer;
+}
+
+.tv-shows{
+  overflow-x:hidden
+}
+
+.nav-assine:hover{
+  color: black;
+  background-color: white;
+  transition: 1s;
+
+}
+
+header{
+  background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e); 
+  animation: gradient 10s ease infinite alternate;
+  background-size: 400% 400%;
+  position: relative;
+  top: -80px;
+}
   
 @keyframes gradient{
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;   
-      }
-    100% {
-    background-position: 10% 50%;   
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;   
+  }
+  100% {
+  background-position: 10% 50%;   
+  }
 }
 
 
@@ -392,11 +534,13 @@ footer p{
   border: 2px solid #ff00e5;
   animation: gradient-botao 2.2s linear 1;
   animation-fill-mode:forwards;
+  transition: transform 1s;
+  transform: scale(1.05);
 }
 
 
 @keyframes gradient-botao{
-    0% {
+  0% {
       background-position: 0% 50%;
     }
     100% {
@@ -413,13 +557,9 @@ header{
 }
 
 @media screen and (min-width:481px){
-/* -----------ANIMAÇÕES--------------------------- */ 
 
 .main-lista-mobile, .main-lista-multitelas{
     font-size: 1.25rem;
-}
-.main-card button{
-  font-size: 1rem;  
 }
 
 .main-card{
@@ -437,6 +577,10 @@ header{
   transform:  rotateY(-40deg);
   transition: transform 1s ease-in-out;
 }   */
+
+.main-card button{
+  font-size: 1rem;
+}
 
 .topo-pagina{
   height: 20px;
@@ -458,12 +602,24 @@ header{
   padding-right: 40px;
   justify-content: end;
 }
+
+.tela-login{
+  height: 421px;
+}
+
+.login-botoes{
+  flex-direction: row;
+  padding-bottom: 40px;
+}
 /* --------------ANIMACOES------------------------ */
 
 .series-HBO:hover{
   border: 2px solid #b535f6;
   padding: 0px;
-  transform: scale(10px);
+
+  /* opacity: 0;
+  transition: 1s; */
+
 }
 
 .series-Max:hover{
@@ -534,6 +690,7 @@ footer ul{
   left: -15px;
   margin-left: -5px;
   margin-right: -5px;
+  padding-bottom: 10px;
 }
 
 footer li{
@@ -575,6 +732,7 @@ footer li{
 .main-card{
   flex-direction: row; 
   justify-content: center;
+
 }
 
 .card-1 button{
@@ -582,8 +740,6 @@ footer li{
 }
 
 }
-
-
 
 /* CORES E SCROLL E FONTE */
 :root {
@@ -619,24 +775,24 @@ footer li{
 
 
 /* SCROLL CUSTOMIZADO */
-  ::-webkit-scrollbar {
+  :-webkit-scrollbar {
     width: 8px;
   }
-  ::-webkit-scrollbar-thumb {
+  :-webkit-scrollbar-thumb {
     background: var(--tertiary-color);
     border-radius: 10px;
   }
-  ::-webkit-scrollbar-thumb:hover {
+  :-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
   }
-  ::webkit-scrollbar{
+  :webkit-scrollbar{
     width: 8px;
   }
-  ::-webkit-scrollbar-thumb {
+  :-webkit-scrollbar-thumb {
     background: var(--tertiary-color);
     border-radius: 10px;
   }
-  ::-webkit-scrollbar-thumb:hover {
+  :-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
   }
 
