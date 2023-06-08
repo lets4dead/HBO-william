@@ -215,6 +215,7 @@ header{
   max-width: 1152px;
   margin: auto;
   padding-bottom: 45px;
+  padding-top: 10px;
  
 }
 
@@ -371,6 +372,7 @@ footer p{
   align-items: center;
   background-image: url("../images/background-movies-series.png") ;
   background-size: 115%;
+  background-position: center;
   background-repeat: no-repeat;
   flex-direction: column;
 }
@@ -480,8 +482,6 @@ input{
 
 @media (pointer:fine) and (min-width:481px){
 
-
-
 footer li:hover{
   cursor: pointer;
   color: white;
@@ -555,6 +555,23 @@ header{
   top: 13px;
 }
 }
+
+@media screen and (max-width:1232px){
+.main-index{
+  background-image: none !important;
+}
+  
+
+}
+
+@media screen and (max-width:700px){
+  .main-tela-login{
+    background-image: none !important;
+    }
+}   
+  
+  
+
 
 @media screen and (min-width:481px){
 
