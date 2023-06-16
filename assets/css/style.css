@@ -482,6 +482,10 @@ input{
 
 @media (pointer:fine) and (min-width:481px){
 
+.series-HBO:hover{
+  transition: 1s;
+}
+
 footer li:hover{
   cursor: pointer;
   color: white;
@@ -525,12 +529,14 @@ header{
 
 
 .header-assine-agora:hover{
+  cursor: pointer;
   border: 2px solid #ff00e5;
   animation: gradient-botao 2.2s linear 1;
   animation-fill-mode:forwards;
 } 
 
 .card-1 button:hover, .card-2 button:hover{
+  cursor: pointer;
   border: 2px solid #ff00e5;
   animation: gradient-botao 2.2s linear 1;
   animation-fill-mode:forwards;
@@ -628,43 +634,8 @@ header{
   flex-direction: row;
   padding-bottom: 40px;
 }
-/* --------------ANIMACOES------------------------ */
 
-.series-HBO:hover{
-  border: 2px solid #b535f6;
-  padding: 0px;
 
-  /* opacity: 0;
-  transition: 1s; */
-
-}
-
-.series-Max:hover{
-  border: 2px solid #b535f6;
-  padding: 0px;
-}
-
-.series-DC:hover{
-  border: 2px solid #b535f6;
-  padding: 0px;
-}
-
-.series-WB:hover{
-  border: 2px solid #b535f6;
-  padding: 0px;
-}
-
-.series-CN:hover{
-  border: 2px solid #b535f6;
-  padding: 0px;
-}
-
-.series-UCL:hover{
-  border: 2px solid #b535f6;
-  padding: 0px;
-}
-
-/* -------------------------------------- */
 .nav-entrar{
   font-size: 0.75rem;
 }
