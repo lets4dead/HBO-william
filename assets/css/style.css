@@ -483,11 +483,8 @@ input{
 
 .series-HBO:hover{
   border: 2px solid #b535f6;
+  border-radius: 25px;    
   padding: 0px;
-
-  /* opacity: 0;
-  transition: 1s; */
-
 }
 
 .series-Max:hover{
