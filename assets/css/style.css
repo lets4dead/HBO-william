@@ -479,7 +479,43 @@ input{
 
 /* se for tela com mouse ira aplicar efeitos nos botoes */
 
+/* --------------ANIMACOES------------------------ */
 
+.series-HBO:hover{
+  border: 2px solid #b535f6;
+  padding: 0px;
+
+  /* opacity: 0;
+  transition: 1s; */
+
+}
+
+.series-Max:hover{
+  border: 2px solid #b535f6;
+  padding: 0px;
+}
+
+.series-DC:hover{
+  border: 2px solid #b535f6;
+  padding: 0px;
+}
+
+.series-WB:hover{
+  border: 2px solid #b535f6;
+  padding: 0px;
+}
+
+.series-CN:hover{
+  border: 2px solid #b535f6;
+  padding: 0px;
+}
+
+.series-UCL:hover{
+  border: 2px solid #b535f6;
+  padding: 0px;
+}
+
+/* -------------------------------------- */
 @media (pointer:fine) and (min-width:481px){
 
 .series-HBO:hover{
